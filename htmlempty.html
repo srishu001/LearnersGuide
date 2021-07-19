@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="sidebar">
+      <a class="active" href="index.html">BACK</a>
+      <a href="htmlbwp.html">HTML BASIC WEB PAGES</a>
+      <a href="htmlsetup.html">HTML Setup</a>
+      <a href="htmlswp.html">HTML Structure</a>
+      <a href="htmlpt.html">HTML Page Titles</a>
+      <a href="htmlp.html"> HTML Paragraphs</a>
+      <a href="htmlh.html">HTML Headings</a>
+      <a href="htmluno.html">HTML Unordered Lists</a>
+      <a href="htmlol.html">HTML Ordered Lists</a>
+      <a href="htmlee.html">HTML Emphasis Elements</a>
+      <a href="htmlstrong.html">HTML Strong Elements</a>
+      <a href="htmlsvp.html">HTML Structure Versus Presentation</a>
+      <a href="htmlempty.html">HTML Empty Elements</a>
+      <a href="htmllai.html">HTML Links & Images</a>
+      <a href="htmlsetuplai.html">HTML Setup Links&Images</a>
+      <a href="htmla.html">HTML Anchors Tag</a>
+      <a href="htmllink.html">HTML Link</a>
+      <a href="htmlabs.html">HTML Absolute,Relative and Root-relative links</a>
+      <a href="htmllt.html">HTML Link Targets</a>
+      <a href="htmlnc.html">HTML Naming Conventions</a>
+      <a href="htmlimages.html">HTML Images</a>
+      <a href="htmlif.html">HTML Image Formats</a>
+      <a href="htmlid.html">HTML Image Dimensions</a>
+      <a href="htmlta.html">HTML Text Alternatives</a>
+      <a href="htmlma.html">HTML More Attributes</a>
+      <a href="htmlentity.html">HTML Entities</a>>
+      
+    </div>
+    <div class="content">
+        <h1 style="text-align:center;">Empty HTML Elements</h1>
+  <hr>
+  
+  <p>
+The HTML tags we’ve encountered so far either wrap text content (e.g., < p>) or other HTML elements (e.g., < ol>). 
+That’s not the case for all HTML elements. Some of them can be “empty“ or “self-closing”. 
+Line breaks and horizontal rules are the most common empty elements you’ll find.
+
+<h2><u>Line breaks</u></h2>
+
+HTML condenses consecutive spaces, tabs, or newlines (together known as “whitespace”) into a single space. 
+To see what we’re talking about, add the following section to our basics.html file:
+<br>
+<pre>
+(SPACES HAVE BEEN ADDED TO DIFFERENTIATE THE HTML CODING , SO THAT IT WOULD NOT BE EXECUTED)
+< h2>Empty Elements <  /h2>
+< p>Thanks for reading! Interneting should be getting easier now.< /p>
+ <p>Regards 
+    The Authors< /p></pre>
+The newline after Regards in the above snippet will be transformed into a space instead of displaying as a line break:
+<br>
+<img src="https://www.internetingishard.com/html-and-css/basic-web-pages/html-collapsing-whitespace-c4012d.png" height="300" width="500">
+<br>
+
+This behavior may seem counter intuitive, but web developers often set their text editor to limit line length to 
+around 80 characters. As a programmer, it’s easier to manage code this way,
+ but having each of the newlines show up in the rendered page would severely mess up the intended page layout.
+To tell the browser that we want a hard line break, we need to use an explicit < br/> element, like this:
+<br>
+<pre>
+(SPACES HAVE BEEN ADDED TO DIFFERENTIATE THE HTML CODING , SO THAT IT WOULD NOT BE EXECUTED)
+
+< p>Regards,< br/>
+The Authors< /p></pre>
+
+The < br/> element is useful anywhere text formatting matters. Haiku, music lyrics, and 
+signatures are just a few examples where it might come in handy.
+
+<br>
+<img src="https://www.internetingishard.com/html-and-css/basic-web-pages/html-line-break-element-f40443.png" height="300" width="500">
+<br>
+
+However, be very careful not to abuse the < br/> tag. Each one you use should still convey meaning—you shouldn’t use it to, 
+say add a bunch of space between paragraphs:
+<br>
+<pre>
+(SPACES HAVE BEEN ADDED TO DIFFERENTIATE THE HTML CODING , SO THAT IT WOULD NOT BE EXECUTED)
+< !-- (You will be shunned for this) -->
+< p>This paragraph needs some space below it...< /p>
+< br/>< br/>< br/>< br/>< br/>< br/>< br/>< br/>
+< p>So, I added some hard line breaks.< /p></pre>
+As discussed in the previous section, this kind of presentational information 
+should be defined in your CSS instead of your HTML.
+
+<h2><u>Horizonal Rules</u></h2>
+
+The < hr/> element is a “horizontal rule”, which represents a thematic break. 
+The transition from one scene of a story into the next or between the end of a letter and a postscript are 
+good examples of when a horizontal rule may be appropriate, For instance:
+
+<br>
+<pre>
+(SPACES HAVE BEEN ADDED TO DIFFERENTIATE THE HTML CODING , SO THAT IT WOULD NOT BE EXECUTED)
+< h2>Empty Elements< /h2>
+< p>Thanks for reading! Interneting should be getting easier now.< /p>
+ < p>Regards,< br/>
+The Authors< /p>
+< hr/>
+< p>P.S. This page might look like crap, but we'll fix that with some CSS
+soon.< /p></pre>
+
+One of the themes for this chapter has been the separation of content (HTML) from presentation (CSS), 
+and < hr/> is no different. Like < em> and < strong>, it has a default appearance (a horizontal line), 
+but once we start working with CSS, we’ll be able to render it as more space between sections, 
+a decorative accent character, or pretty much anything else we want.
+
+<br>
+<img src="https://www.internetingishard.com/html-and-css/basic-web-pages/html-horizontal-rule-element-49f526.png" height="300" width="500">
+<br>
+
+Like < br/>, < hr/> should carry meaning—don’t use it when you just want to display a line for the sake of aesthetics.
+ For that, you’ll want to use the CSS border property, which we’ll discuss in a few chapters.
+Another way to think about the < hr/> element is that it carries less significance than the separation 
+created by a new heading element, but more significance than a new paragraph.
+
+<h2><u>Optional Trailing slash</u></h2>
+
+The trailing slash (/) in all empty HTML elements is entirely optional.
+ The above snippet could also be marked up like this (note the lack of / in the < br> and < hr> tags):
+ <br>
+ <pre>
+ (SPACES HAVE BEEN ADDED TO DIFFERENTIATE THE HTML CODING , SO THAT IT WOULD NOT BE EXECUTED)
+
+ < p>Regards,< br>
+The Authors< /p>
+< hr>
+ </pre>
+
+It doesn’t really make a difference which convention you choose, but pick one and stick to it for the sake of consistency. 
+In this tutorial, we’ll be including the trailing / character because it clearly shows that it’s a self-closing element. 
+This will help prevent your eyes from searching for the closing tag elsewhere in the document.
+<br>
+<br>
+
+
+        
+</p>
+    </div>
+        </body>
+</html>
+   

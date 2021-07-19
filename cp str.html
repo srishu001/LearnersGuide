@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>cp str</title>
+</head>
+<body>
+    <div class="sidebar">
+        <a class="active"  href="index.html">BACK</a>
+        <a href="cp intro.html">C Introduction</a>
+        <h3>C Language Fundamental</h3>
+        <a href="cp tok.html">C Token</a>
+        <a href="cp ide.html">C Identifiers</a>
+        <a href="cp key.html">C Keywords</a>
+        <a href="cp con.html"> C Constants</a>
+        <a href="cp opr.html">C Operators</a>
+        <a href="cp dt.html"> C Data Type</a>
+        <a href="cp var.html">C Variables</a>
+        <h3>Decision Making Structures in C</h3>
+        <a href="cp is.html">If Statement</a>
+        <a href="cp ies.html">If-Else Statement</a>
+        <a href="cp nie.html">Nested If-Else</a>
+        <a href="cp eif.html">Else-If Statement</a>
+        <a href="co gs.html">Goto Statement</a>
+        <a href="cp swit.html">Switch Statement</a>
+        <h3>Loop control Structure in C</h3>
+        <a href="cp whi.html">While Loop</a>
+        <a href="cp for.html">For Loop</a>
+        <a href="cp dw.html">Do-While Loop</a>
+        <h3>Array and String in C</h3>
+        <a href="cp arr.html">Array </a>
+        <a href="cp str.html">String</a>
+        <h3>Function in C</h3>
+        <a href="cp fun.html">Functions</a>
+        <a href="cp funde.html">Function Definition</a>
+        <a href="cp fv.html">Function Variables</a>
+        <h3>Pointer in C</h3>
+        <a href="cp poin.html">Pointer</a>
+        <a href="cp pa.html">Pointer and Array</a>
+        <a href="cp pf.html">Pointer and Function</a>
+        <a href="cp mm.html">Memory Management</a>
+        <a href="cp dma.html">Dynamic Memory Allocation</a>
+       
+    </div> 
+    <div class="content">
+        <h1>String in C </h1>
+       <hr>
+       <p>In C programming, a string is a sequence of characters terminated with a null character \0. For example:</p>
+       <p><b>char c[] = "c string";</b></p>
+       <p>When the compiler encounters a sequence of characters enclosed in the double quotation marks, it appends a null character \0 at the end by default.</p>
+       <img src="https://cdn.programiz.com/sites/tutorial2program/files/c-string.jpg"width='700' height='100'>
+       <h3>Declaration of String</h3>
+       <p>Here's how you can declare strings:</p>
+       <p>char s[5];</p>
+       <img src="https://cdn.programiz.com/sites/tutorial2program/files/c-string-declaration_0.jpg"width='600' height='90'>
+       <h3>Initialization of String </h3>
+       <p>You can initialize strings in a number of ways.</p>
+       <p><b><br>char c[] = "abcd"; <br><br>
+
+        char c[50] = "abcd"; <br><br>
+        
+        char c[] = {'a', 'b', 'c', 'd', '\0'}; <br><br>
+        
+        char c[5] = {'a', 'b', 'c', 'd', '\0'};<br></b></p> 
+        <img src="https://cdn.programiz.com/sites/tutorial2program/files/c-string-initialization.jpg"width='600' height='90'>
+        <p>Let's take another example:</p>
+        <p><b><br>char c[5] = "abcde";</b></p>
+        <p>Here, we are trying to assign 6 characters (the last character is '\0') to a char array having 5 characters. This is bad and you should never do this.</p>
+        <h3>Assigning Value to String</h3>
+        <p>Arrays and strings are second-class citizens in C; they do not support the assignment operator once it is declared. For example,        </p>
+       <p><b><br>char c[100];<br><br>
+        c = "C programming";  // Error! array type is not assignable. <br></b></p>
+
+
+
+
+</body>
+</html>

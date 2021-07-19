@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1500px;
+  background-color: rgb(129, 172, 172);
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.footer {
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height: 90px;
+  background-color: #D0DAEE;
+}
+
+	.text-footer {
+		text-align: center;
+		padding: 40px 0;
+		font-family: 'Ubuntu', sans-serif;
+		display: flex;
+		justify-content: center;
+		color: black;
+	}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a class="active"  href="index.html">BACK</a>
+  <a href="css web.html">CSS Introduction</a>
+  <a href="css syn.html">CSS Syntex</a>
+  <a href="css col.html">CSS Colors</a>
+  <a href="css com.html">CSS Comment</a>
+  <a href="css smp.html"> Setting Multiple Properties</a>
+  <a href="css sde.html"> Selecting Different Elements</a>
+  <a href="css um.html"> Unit Measurement</a>
+  <a href="css ls.html">List Style</a>
+  <a href="css ss.html">Style Sheet</a>
+  <a href="css mts.html">More Text Style</a>
+  <a href="css pss.html">Page-Specific styles</a>
+  <a href="css is.html">Inline Style</a>
+  <a href="css ms.html">Multiple Style</a>
+  <a href="css cas.html">Cascade</a>
+
+</div>
+
+<div class="content">
+  <h1>CSS Colors</h1>
+<p>______________________________________________________________________________________________________________________________________________________</p>
+<p>f you try loading either of the HTML pages in a browser, you won’t see our stylesheet in action. That’s because we didn’t link them together yet. This is what the HTML <link/> element is for. In hello-css.html, change <head> to the following:<br><br>
+
+<head>
+  <meta charset='UTF-8'/>
+  <title>Hello, CSS</title>
+  <link rel='stylesheet' href='styles.css'/>
+</head><br><br>
+This <link/> element is how browsers know they need to load styles.css when they try to render our hello-css.html page. We should now see blindingly red text everywhere:<br><br>
+<p><head>
+  <meta charset='UTF-8'/>
+  <title>Hello, CSS</title>
+  <link rel='stylesheet' href='styles.css'/>
+</head></p>
+
+Web page with a lot of bright red text due to body selector
+The <link/> element is just like the <a> element, but it’s only meant to be used inside of < head>. Since it’s in the head of the document, < link/> connects to metadata that’s defined outside of the current document. Also notice that it’s an empty element, so it doesn’t need a closing tag.<br><br>
+<p>The < link/> element is just like the < a> element, but it’s only meant to be used inside of < head>. Since it’s in the head of the document, < link/> connects to metadata that’s defined outside of the current document. Also notice that it’s an empty element, so it doesn’t need a closing tag.
+
+  The rel attribute defines the relationship between the resource and the HTML document. By far the most common value is stylesheet, but there are a few other options. The href attribute works the same as in the previous chapter, only it should point to a .css file instead of another web page. The value for href can be an absolute, relative, or root-relative link.
+  
+  </p>
+<img src="https://www.internetingishard.com/html-and-css/hello-css/linking-a-css-stylesheet-572fd1.png"><br>
+
+
+<p>rel attribute defines the relationship between the resource and the HTML document. By far the most common value is stylesheet, but there are a few other options. The href attribute works the same as in the previous chapter, only it should point to a .css file instead of another web page. The value for href can be an absolute, relative, or root-relative link.</p>
+<p>Note that there’s no direct connection between the browser and our stylesheet. It’s only through the HTML markup that the browser can find it. CSS, images, and even JavaScript all rely on an HTML page to glue everything together, making HTML the heart of most websites.</p>
+</div>
+
+</body>
+</html>

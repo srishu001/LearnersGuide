@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="sidebar">
+      <a class="active" href="index.html">BACK</a>
+      <a href="htmlbwp.html">HTML BASIC WEB PAGES</a>
+      <a href="htmlsetup.html">HTML Setup</a>
+      <a href="htmlswp.html">HTML Structure</a>
+      <a href="htmlpt.html">HTML Page Titles</a>
+      <a href="htmlp.html"> HTML Paragraphs</a>
+      <a href="htmlh.html">HTML Headings</a>
+      <a href="htmluno.html">HTML Unordered Lists</a>
+      <a href="htmlol.html">HTML Ordered Lists</a>
+      <a href="htmlee.html">HTML Emphasis Elements</a>
+      <a href="htmlstrong.html">HTML Strong Elements</a>
+      <a href="htmlsvp.html">HTML Structure Versus Presentation</a>
+      <a href="htmlempty.html">HTML Empty Elements</a>
+      <a href="htmllai.html">HTML Links & Images</a>
+      <a href="htmlsetuplai.html">HTML Setup Links&Images</a>
+      <a href="htmla.html">HTML Anchors Tag</a>
+      <a href="htmllink.html">HTML Link</a>
+      <a href="htmlabs.html">HTML Absolute,Relative and Root-relative links</a>
+      <a href="htmllt.html">HTML Link Targets</a>
+      <a href="htmlnc.html">HTML Naming Conventions</a>
+      <a href="htmlimages.html">HTML Images</a>
+      <a href="htmlif.html">HTML Image Formats</a>
+      <a href="htmlid.html">HTML Image Dimensions</a>
+      <a href="htmlta.html">HTML Text Alternatives</a>
+      <a href="htmlma.html">HTML More Attributes</a>
+      <a href="htmlentity.html">HTML Entities</a>
+      
+    </div>
+    <div class="content">
+      <h1 style="text-align:center;">Unordered Lists</h1>
+      <hr>
+      
+    <p style="font-family:Verdana;">
+        Whenever you surround a piece of text with HTML tags, you’re adding new meaning to that text. Wrapping content in < ul>
+        tags tells a browser that whatever is inside should be rendered as an “unordered list”. To denote individual items
+        in that list, you wrap them in < li> tags, like so:
+        <br>
+<pre>
+(SPACES HAVE BEEN ADDED TO DIFFERENTIATE THE HTML CODING , SO THAT IT WOULD NOT BE EXECUTED)
+
+    < h2>Lists< /h2>
+    < p>This is how you make an unordered list:< /p>
+    < ul>
+    < li>Add a "ul" element (it stands for unordered list)< /li>
+ < li>Add each item in its own "li" element< /li>
+ < li>They don't need to be in any particular order< /li>
+    < /ul>
+</pre>
+    After adding this markup to the < body> element (underneath the existing content), 
+    you should see a bulleted list with a dedicated bullet for each < li> element:
+
+    <br>
+<img src="https://www.internetingishard.com/html-and-css/basic-web-pages/html-unordered-lists-f45526.png" height="300" width="500">
+<br>
+
+The HTML specification defines strict rules about what elements can go inside other elements. 
+In this case, < ul> elements should only contain < li> elements, which means you should never ever write something like this:
+
+<br>
+<pre>
+(SPACES HAVE BEEN ADDED TO DIFFERENTIATE THE HTML CODING , SO THAT IT WOULD NOT BE EXECUTED)
+< !-- (This is bad!) -->
+< ul >
+  < p >Add a "ul" element (it stands for unordered list)< /p >
+< /ul >
+Instead, you should wrap that paragraph with < li> tags:
+< !-- (Do this instead) -->
+< ul >
+  < li >< p >Add a "ul" element (it stands for unordered list)< /p>< /li>
+< /ul></pre>
+    How do we know that < ul> only accepts < li> elements and that < li> allows nested paragraphs? 
+    Because the Mozilla Developer Network (MDN) says so. MDN is a superb HTML element reference. 
+    We’ll try to cover as much as we can about how to use basic HTML elements in this tutorial, 
+    but whenever you’re not sure about a particular element, do a quick Google search for “MDN < some-element>”.
+</p>
+
+
+        
+   
+    </div>
+        </body>
+</html>
+   

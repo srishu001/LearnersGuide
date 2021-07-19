@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>css pss</title>
+</head>
+<body>
+    <div class="sidebar">
+        <a class="active"  href="index.html">BACK</a>
+        <a href="css web.html">CSS Introduction</a>
+        <a href="css syn.html">CSS Syntex</a>
+        <a href="css col.html">CSS Colors</a>
+        <a href="css com.html">CSS Comment</a>
+        <a href="css smp.html"> Setting Multiple Properties</a>
+        <a href="css sde.html"> Selecting Different Elements</a>
+        <a href="css um.html"> Unit Measurement</a>
+        <a href="css ls.html">List Style</a>
+        <a href="css ss.html">Style Sheet</a>
+        <a href="css mts.html">More Text Style</a>
+        <a href="css pss.html">Page-Specific styles</a>
+        <a href="css is.html">Inline Style</a>
+        <a href="css ms.html">Multiple Style</a>
+        <a href="css cas.html">Cascade</a>
+
+      
+      
+      
+      </div>
+      
+      <div class="content">
+        <h1>Page-Specific styles</h1>
+        <p>______________________________________________________________________________________________________________________________________________________</p>
+        <p>The < style> element is used to add page-specific CSS rules to individual Html documents.   < style> element always lives in the < head> of a  web page, which makes sense because it’s metadata, not actual content.</p>
+        <p>As an example, let’s apply some styles to our dummy.html page by updating its < head> element to this:</p>
+        
+        <p>These apply only to dummy.html. Our hello-css.html page won’t be affected. If you did it right, you should see bright blue text when you load dummy.html in a browser.</p>
+        <img src="https://www.internetingishard.com/html-and-css/hello-css/page-specific-css-styles-example-99d6c8.png"width='580' height='388'>
+        <p>Anything you would put in our styles.css file can live in this < style> element. It uses the exact same CSS syntax as an external stylesheet, but everything here will override rules in our styles. css file. In this case, we’re telling the browser to ignore the color property we defined for < body> in our external stylesheet and use #0000FF instead.</p>
+        <img src="https://www.internetingishard.com/html-and-css/hello-css/page-specific-css-styles-c6b688.png"width='580' height='388'>
+        <p>The problem with page-specific styles is that they’re incredibly difficult to maintain. As shown in the above diagram, when you want to apply these styles to another page, you have to copy-and-paste them into that document’s < head>. Trying to track down redundant CSS rules in multiple .html files is much harder than editing a single .css file.</p>
+        <img src="https://www.internetingishard.com/html-and-css/hello-css/external-css-styles-b073ea.png"width='580' height='388'>
+        <p>Page-specific styles occasionally come in handy when you’re in a rush, but it’s almost always better to store all your CSS in external stylesheets opposed to < style> elements.</p>
+</body>
+</html>

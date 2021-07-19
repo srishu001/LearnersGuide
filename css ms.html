@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>css ms</title>
+</head>
+<body>
+    <div class="sidebar">
+        <a class="active"  href="index.html">BACK</a>
+        <a href="css web.html">CSS Introduction</a>
+        <a href="css syn.html">CSS Syntex</a>
+        <a href="css col.html">CSS Colors</a>
+        <a href="css com.html">CSS Comment</a>
+        <a href="css smp.html"> Setting Multiple Properties</a>
+        <a href="css sde.html"> Selecting Different Elements</a>
+        <a href="css um.html"> Unit Measurement</a>
+        <a href="css ls.html">List Style</a>
+        <a href="css ss.html">Style Sheet</a>
+        <a href="css mts.html">More Text Style</a>
+        <a href="css pss.html">Page-Specific styles</a>
+        <a href="css is.html">Inline Style</a>
+        <a href="css ms.html">Multiple Style</a>
+      
+      
+      
+      
+      </div>
+      
+      <div class="content">
+        <h1>Multiple Style</h1>
+        <p>______________________________________________________________________________________________________________________________________________________</p>
+       <p>CSS rules can be spread across several external stylesheets by adding multiple < link/> elements to the same page. A common use case is to separate out styles for different sections of your site. This lets you selectively apply consistent styles to distinct categories of web pages.
+
+        For instance, if we had a bunch of product pages that looked entirely different than our blog, we could use the following. (We don’t actually have these stylesheets defined, so don’t bother adding them to our example project.)</p>
+       <p><b>< !-- All product pages have this --> <br>
+        < head> <br>
+          < link rel='stylesheet' href='styles.css'/> <br>
+          < link rel='stylesheet' href='product.css'/> <br>
+
+        < /head> <br>
+        </b></p>
+        <p><b>< !-- While all blog posts have this --> <br>
+            < head> <br>
+              < link rel='stylesheet' href='styles.css'/> <br>
+              < link rel='stylesheet' href='blog.css'/> <br>
+            < /head></b></p>
+        <p>The order of the < link/> elements matters. Stylesheets that come later will override styles in earlier ones. Typically, you’ll put your “base” or “default” styles in a global stylesheet (styles.css) and supplement them with section-specific stylesheets (product.css and blog.css). This allows you to organize CSS rules into manageable files while avoiding the perils of page-specific and inline styles.</p>
+
+</body>
+</html>

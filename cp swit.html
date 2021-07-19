@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>cp swit</title>
+</head>
+<body>
+    <div class="sidebar">
+        <a class="active"  href="index.html">BACK</a>
+        <a href="cp intro.html">C Introduction</a>
+        <h3>C Language Fundamental</h3>
+        <a href="cp tok.html">C Token</a>
+        <a href="cp ide.html">C Identifiers</a>
+        <a href="cp key.html">C Keywords</a>
+        <a href="cp con.html"> C Constants</a>
+        <a href="cp opr.html">C Operators</a>
+        <a href="cp dt.html"> C Data Type</a>
+        <a href="cp var.html">C Variables</a>
+        <h3>Decision Making Structures in C</h3>
+        <a href="cp is.html">If Statement</a>
+        <a href="cp ies.html">If-Else Statement</a>
+        <a href="cp nie.html">Nested If-Else</a>
+        <a href="cp eif.html">Else-If Statement</a>
+        <a href="co gs.html">Goto Statement</a>
+        <a href="cp swit.html">Switch Statement</a>
+        <h3>Loop control Structure in C</h3>
+        <a href="cp whi.html">While Loop</a>
+        <a href="cp for.html">For Loop</a>
+        <a href="cp dw.html">Do-While Loop</a>
+        <h3>Array and String in C</h3>
+        <a href="cp arr.html">Array </a>
+        <a href="cp str.html">String</a>
+        <h3>Function in C</h3>
+        <a href="cp fun.html">Functions</a>
+        <a href="cp funde.html">Function Definition</a>
+        <a href="cp fv.html">Function Variables</a>
+        <h3>Pointer in C</h3>
+        <a href="cp poin.html">Pointer</a>
+        <a href="cp pa.html">Pointer and Array</a>
+        <a href="cp pf.html">Pointer and Function</a>
+        <a href="cp mm.html">Memory Management</a>
+        <a href="cp dma.html">Dynamic Memory Allocation</a>
+       
+    </div> 
+    <div class="content">
+        <h1>Switch Statement </h1>
+       <hr>
+       <p>C switch statement is used when you have multiple possibilities for the if statement. Switch case will allow you to choose from multiple options. When we compare it to a general electric switchboard, you will have many switches in the switchboard but you will only select the required switch, similarly, the switch case allows you to set the necessary statements for the user.</p>
+      <p><u><br>Syntex :</u></p>
+      <p><b><br>switch(variable) <br>
+        {<br>
+        case 1: <br>
+           //execute your code <br>
+        break; <br><br>
+        
+        case n: <br>
+           //execute your code <br>
+        break;<br><br>
+        
+        default: <br>
+           //execute your code <br>
+        break; <br>
+        } <br></b></p>
+        <p>After the end of each block it is necessary to insert a break statement because if the programmers do not use the break statement, all consecutive blocks of codes will get executed from every case onwards after matching the case block.</p>
+        <p><u>Example :</u></p>
+        <p><b><br>
+            #include< stdio.h> <br><br>
+
+            main() <br>
+            {<br>
+                int a; <br>
+                printf("Please enter a no between 1 and 5: ");<br>
+                scanf("%d",&a);<br><br>
+                
+                switch(a) <br>
+                {<br>
+                case 1: <br>
+                printf("You chose One"); <br>
+                break;<br><br>
+                
+                case 2: <br>
+                printf("You chose Two"); <br>
+                break;<br><br>
+            
+                case 3: <br>
+                printf("You chose Three"); <br>
+                break;<br><br>
+            
+                case 4: <br>
+                printf("You chose Four"); <br>
+                break;<br><br>
+            
+                case 5: <br>
+                printf("You chose Five.");<br>
+                break;<br>
+            
+                default : <br>
+                printf("Invalid Choice. Enter a no between 1 and 5");<br>
+                break;<br>
+                } <br>
+            
+            } <br></b></p>
+
+
+
+</body>
+</html>

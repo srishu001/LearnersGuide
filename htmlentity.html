@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a class="active" href="index.html">BACK</a>
+  <a href="htmlbwp.html">HTML BASIC WEB PAGES</a>
+  <a href="htmlsetup.html">HTML Setup</a>
+  <a href="htmlswp.html">HTML Structure</a>
+  <a href="htmlpt.html">HTML Page Titles</a>
+  <a href="htmlp.html"> HTML Paragraphs</a>
+  <a href="htmlh.html">HTML Headings</a>
+  <a href="htmluno.html">HTML Unordered Lists</a>
+  <a href="htmlol.html">HTML Ordered Lists</a>
+  <a href="htmlee.html">HTML Emphasis Elements</a>
+  <a href="htmlstrong.html">HTML Strong Elements</a>
+  <a href="htmlsvp.html">HTML Structure Versus Presentation</a>
+  <a href="htmlempty.html">HTML Empty Elements</a>
+  <a href="htmllai.html">HTML Links & Images</a>
+  <a href="htmlsetuplai.html">HTML Setup Links&Images</a>
+  <a href="htmla.html">HTML Anchors Tag</a>
+  <a href="htmllink.html">HTML Link</a>
+  <a href="htmlabs.html">HTML Absolute,Relative and Root-relative links</a>
+  <a href="htmllt.html">HTML Link Targets</a>
+  <a href="htmlnc.html">HTML Naming Conventions</a>
+  <a href="htmlimages.html">HTML Images</a>
+  <a href="htmlif.html">HTML Image Formats</a>
+  <a href="htmlid.html">HTML Image Dimensions</a>
+  <a href="htmlta.html">HTML Text Alternatives</a>
+  <a href="htmlma.html">HTML More Attributes</a>
+  <a href="htmlentity.html">HTML Entities</a>
+
+    </div>
+
+    <div class="content">
+        <h1 style="text-align:center;">HTML Entities</h1>
+        <hr>
+        <p style="font-family:Verdana;">
+            Ok, so this last section doesn’t actually have anything to do with links or images, but we do need to
+            discuss one more thing before switching gears into CSS. An “HTML entity” is a special character that can’t
+            be represented as plain text in an HTML document. This typically either means it’s a reserved character in
+            HTML or you don’t have a key on your keyboard for it.
+            <br>
+
+        <h2><u>Reserved Characters</u></h2>
+        <br>
+        <br>
+        The <,>, and & characters are called “reserved characters” because they aren’t allowed to be inserted into an
+            HTML document without being encoded. This is because they mean something in the HTML syntax: < begins a new
+                tag,> ends a tag, and, as we’re about to learn, & sets off an HTML entity.
+
+                In misc/extras.html, add the following:
+                <br>
+                < h2>HTML Entities< /h2>
+                        < p>There are three reserved characters in HTML: &lt; &gt; and &amp;. You
+                            should always use HTML entities for these three characters.</p>
+                            <br>
+                            Entities always begin with an ampersand (&) and end with a semicolon (;). In between, you
+                            put a special
+                            code that your browser will interpret as a symbol. In this case, it interprets lt, gt, and
+                            amp as
+                            less-than, greater-than, and ampersand symbols, respectively.
+
+                            <br>
+                            <h2><u>Quotes</u></h2>
+                            <br>
+                            <br>
+                            Curly quotes are by no means necessary, but if you care about typography they’ll be some of
+                            the most common HTML entities you’ll use. There’s four different kinds of curly quotes
+                            (opening and closing single and double quotes):
+                            <br>
+                            <pre>
+(SPACES HAVE BEEN ADDED TO DIFFERENTIATE THE HTML CODING , SO THAT IT WOULD NOT BE EXECUTED)
+
+                            & ldquo;
+                            & rdquo;
+                            & lsquo;
+                            & rsquo;
+                            <br>
+                            You can use them in place of ' and " straight quotes, like so:
+
+                            < p>If you& rsquo;re into & ldquo;web typography,& rdquo; you& rsquo;ll also find
+                                yourself using curly quotes quite a bit.< /p>
+                          <br>
+</pre>
+                            Unlike straight quotes, these curly quote entities should hug the text.
+                            <br>
+                            <br>
+
+                            <h2><u>UTF-8 And HTML Entities</u></h2>
+                            <br>
+                            <br>
+                            In the olden days of the web, HTML files weren’t allowed to have special characters in them,
+                            making entities much more useful. But, since we’re now using a UTF-8 character set, we
+                            should be able to insert any character directly into the HTML document. This makes entities
+                            primarily useful as reserved characters or for convenience when authoring straight HTML.
+                            <br>
+                            <br>
+
+
+                            </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+  background-color: rgb(129, 172, 172);
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="sidebar">
+  <a class="active"  href="index.html">BACK</a>
+  <a href="css web.html">CSS Introduction</a>
+  <a href="css syn.html">CSS Syntex</a>
+  <a href="css col.html">CSS Colors</a>
+  <a href="css com.html">CSS Comment</a>
+  <a href="css smp.html"> Setting Multiple Properties</a>
+  <a href="css sde.html"> Selecting Different Elements</a>
+  <a href="css um.html"> Unit Measurement</a>
+  <a href="css ls.html">List Style</a>
+  <a href="css ss.html">Style Sheet</a>
+  <a href="css mts.html">More Text Style</a>
+  <a href="css pss.html">Page-Specific styles</a>
+  <a href="css is.html">Inline Style</a>
+  <a href="css ms.html">Multiple Style</a>
+  <a href="css cas.html">Cascade</a>
+
+
+
+
+</div>
+
+<div class="content">
+  <h1>CSS Introduction</h1>
+  <p>______________________________________________________________________________________________________________________________________________________</p>
+  <h1>What is CSS?</h1>
+
+  <p>The first few chapters of this tutorial focused exclusively on HTML. Now, it’s time to make things pretty (sort of) with Cascading Style Sheets (CSS). You can think of CSS as defining the “design” of a web page. It determines things like font size, margins, and colors using a language entirely separate from HTML.</p>
+<p>Why is it a separate language? Well, it serves a completely different purpose. HTML represents the content of your web page, while CSS defines how that content is presented to the user. This is a fundamental distinction central to modern web development.</p>
+<img src="https://www.internetingishard.com/html-and-css/hello-css/css-vs-html-f4fdfa.png"width='580' height='388'>
+
+
+
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>cp dma</title>
+</head>
+<body>
+    <div class="sidebar">
+        <a class="active"  href="index.html">BACK</a>
+        <a href="cp intro.html">C Introduction</a>
+        <h3>C Language Fundamental</h3>
+        <a href="cp tok.html">C Token</a>
+        <a href="cp ide.html">C Identifiers</a>
+        <a href="cp key.html">C Keywords</a>
+        <a href="cp con.html"> C Constants</a>
+        <a href="cp opr.html">C Operators</a>
+        <a href="cp dt.html"> C Data Type</a>
+        <a href="cp var.html">C Variables</a>
+        <h3>Decision Making Structures in C</h3>
+        <a href="cp is.html">If Statement</a>
+        <a href="cp ies.html">If-Else Statement</a>
+        <a href="cp nie.html">Nested If-Else</a>
+        <a href="cp eif.html">Else-If Statement</a>
+        <a href="co gs.html">Goto Statement</a>
+        <a href="cp swit.html">Switch Statement</a>
+        <h3>Loop control Structure in C</h3>
+        <a href="cp whi.html">While Loop</a>
+        <a href="cp for.html">For Loop</a>
+        <a href="cp dw.html">Do-While Loop</a>
+        <h3>Array and String in C</h3>
+        <a href="cp arr.html">Array </a>
+        <a href="cp str.html">String</a>
+        <h3>Function in C</h3>
+        <a href="cp fun.html">Functions</a>
+        <a href="cp funde.html">Function Definition</a>
+        <a href="cp fv.html">Function Variables</a>
+        <h3>Pointer in C</h3>
+        <a href="cp poin.html">Pointer</a>
+        <a href="cp pa.html">Pointer and Array</a>
+        <a href="cp pf.html">Pointer and Function</a>
+        <a href="cp mm.html">Memory Management</a>
+        <a href="cp dma.html">Dynamic Memory Allocation</a>
+      
+    </div> 
+    <div class="content">
+        <h1> Dynamic Memory Allocation</h1>
+       <hr>
+       <p>In this tutorial, you'll learn to dynamically allocate memory in your C program using standard library functions: malloc(), calloc(), free() and realloc().<br>
+
+
+       As you know, an array is a collection of a fixed number of values. Once the size of an array is declared, you cannot change it. 
+       
+       Sometimes the size of the array you declared may be insufficient. To solve this issue, you can allocate memory manually during run-time. This is known as dynamic memory allocation in C programming.
+       
+       To allocate memory dynamically, library functions are malloc(), calloc(), realloc() and free() are used. These functions are defined in the < stdlib.h> header file.</p>
+       
+      <p> C malloc() <br>
+       The name "malloc" stands for memory allocation. <br><br>
+       
+       The malloc() function reserves a block of memory of the specified number of bytes. And, it returns a pointer of void which can be casted into pointers of any form. <br><br>
+       
+       Syntax of malloc() <br>
+       ptr = (castType*) malloc(size); <br><br>
+       Example: <br>navbar
+       
+       ptr = (float*) malloc(100 * sizeof(float)); <br>
+       The above statement allocates 400 bytes of memory. It's because the size of float is 4 bytes. And, the pointer ptr holds the address of the first byte in the allocated memory.
+       
+       The expression results in a NULL pointer if the memory cannot be allocated.</p>
+       
+      <p> C calloc() <br><br>
+       
+       The name "calloc" stands for contiguous allocation.
+       <br>
+       The malloc() function allocates memory and leaves the memory uninitialized, whereas the calloc() function allocates memory and initializes all bits to zero.
+       <br><br>
+       Syntax of calloc() <br>
+       ptr = (castType*)calloc(n, size); <br><br>
+       Example:v <br><br>
+       
+       ptr = (float*) calloc(25, sizeof(float));<br>
+       The above statement allocates contiguous space in memory for 25 elements of type float.</p>
+       
+      <p> C free() <br><br>
+       Dynamically allocated memory created with either calloc() or malloc() doesn't get freed on their own. You must explicitly use free() to release the space. <br><br>
+       
+       Syntax of free() <br><br>
+       free(ptr); <br>
+       This statement frees the space allocated in the memory pointed by ptr.</p>
+       
+       <p><b>Example 1: malloc() and free() <br><br>
+       // Program to calculate the sum of n numbers entered by the user <br><br>
+       
+       #include < stdio.h> <br>
+       #include < stdlib.h> <br><br>
+       
+       int main() { <br>
+         int n, i, *ptr, sum = 0; <br><br>
+       
+         printf("Enter number of elements: ");<br>
+         scanf("%d", &n);<br><br>
+       
+         ptr = (int*) malloc(n * sizeof(int));<br><br>
+        
+         // if memory cannot be allocated <br><br>
+         if(ptr == NULL) {<br>
+           printf("Error! memory not allocated.");<br>
+           exit(0);<br>
+         } <br><br>
+       
+         printf("Enter elements: "); <br>
+         for(i = 0; i < n; ++i) {<br>
+           scanf("%d", ptr + i);<br>
+           sum += *(ptr + i);<br>
+         } <br><br>
+       
+         printf("Sum = %d", sum);
+    <br><br>     
+         // deallocating the memory <br>
+         free(ptr); <br><br>
+       
+         return 0; <br>
+       } <br> <br>
+
+
+       Output: <br><br>
+       
+       Enter number of elements: 3 <br>
+       Enter elements: 100 <br>
+       20 <br>
+       36 <br>
+       Sum = 156 <br><br>
+       Here, we have dynamically allocated the memory for n number of int. </b></p>
+
+
+
+
+
+</body>
+</html>

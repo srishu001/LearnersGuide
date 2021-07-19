@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a class="active" href="index.html">BACK</a>
+        <a href="htmlbwp.html">HTML BASIC WEB PAGES</a>
+        <a href="htmlsetup.html">HTML Setup</a>
+        <a href="htmlswp.html">HTML Structure</a>
+        <a href="htmlpt.html">HTML Page Titles</a>
+        <a href="htmlp.html"> HTML Paragraphs</a>
+        <a href="htmlh.html">HTML Headings</a>
+        <a href="htmluno.html">HTML Unordered Lists</a>
+        <a href="htmlol.html">HTML Ordered Lists</a>
+        <a href="htmlee.html">HTML Emphasis Elements</a>
+        <a href="htmlstrong.html">HTML Strong Elements</a>
+        <a href="htmlsvp.html">HTML Structure Versus Presentation</a>
+        <a href="htmlempty.html">HTML Empty Elements</a>
+        <a href="htmllai.html">HTML Links & Images</a>
+        <a href="htmlsetuplai.html">HTML Setup Links&Images</a>
+        <a href="htmla.html">HTML Anchors Tag</a>
+        <a href="htmllink.html">HTML Link</a>
+        <a href="htmlabs.html">HTML Absolute,Relative and Root-relative links</a>
+        <a href="htmllt.html">HTML Link Targets</a>
+        <a href="htmlnc.html">HTML Naming Conventions</a>
+        <a href="htmlimages.html">HTML Images</a>
+        <a href="htmlif.html">HTML Image Formats</a>
+        <a href="htmlid.html">HTML Image Dimensions</a>
+        <a href="htmlta.html">HTML Text Alternatives</a>
+        <a href="htmlma.html">HTML More Attributes</a>
+        <a href="htmlentity.html">HTML Entities</a>
+    </div>
+
+    <div class="content">
+        <h1 style="text-align:center;">More HTML Attributes</h1>
+        <hr>
+        <p style="font-family:Verdana;">
+            Now that we’re (hopefully) more than comfortable with the HTML attribute syntax, we can add a couple of
+            finishing touches to our HTML boilerplate code. Every web page you create should define the language it’s
+            written in and its character set.
+            <br>
+        <h2><u>Document Language</u></h2>
+        <br>
+        <br>
+        A web page’s default language is defined by the lang attribute on the top-level < html> element. Our document
+            is in English, so we’ll use the en country code as the attribute value (do this for all of the pages we
+            created):
+            <br>
+            < html lang='en'>
+                <br>
+                If you’re not sure what the country code for your language is, you can look it up Online under the
+                Subtag
+                field.
+                <br>
+                <br>
+
+                <h2><u>Character Sets</u></h2>
+                <br>
+                <br>
+                A “character set” is kind of like a digital alphabet for your browser. It’s different from the language
+                of your document in that it only affects how the letters themselves are rendered, not the language of
+                the content. Let’s copy and paste some international characters into our misc/extras.html web page and
+                see what happens.
+
+                <br>
+                <pre>
+(SPACES HAVE BEEN ADDED TO DIFFERENTIATE THE HTML CODING , SO THAT IT WOULD NOT BE EXECUTED)
+
+                < h2>Character Sets< /h2>
+
+                < p>You can use UTF-8 to count in Turkish:< /p>
+
+                < ol>
+                    < li>bir< /li>
+                    < li>iki< /li>
+                    < li>üç< /li>
+                    < li>dört< /li>
+                    < li>beş< /li>
+                < /ol>
+</pre>
+
+                When you view this in a browser, you’ll see some weird stuff where the ü, ç, ö, and ş characters should
+                be:
+                <br>
+                <img src="https://www.internetingishard.com/html-and-css/links-and-images/html-character-sets-no-utf-8-304820.png"
+                    height="300" width="400">
+                <br>
+                That’s because the default character set for most browsers doesn’t accommodate these “special”
+                characters. To fix this, specify a UTF-8 character encoding by adding a
+                < meta> element with a charset attribute to the
+
+                < head> of our misc/extras.html file:
+<br>
+                    < meta charset='UTF-8' />
+                    <br>
+                    The special characters should now render correctly. These days, UTF-8 is sort of like a universal
+                    alphabet for the Internet. Every web page you create should have this line in its < head>.
+                    <br>
+                    <br>
+</p>
+    </div>
+</body>
+</html>

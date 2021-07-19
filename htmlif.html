@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a class="active" href="index.html">BACK</a>
+        <a href="htmlbwp.html">HTML BASIC WEB PAGES</a>
+        <a href="htmlsetup.html">HTML Setup</a>
+        <a href="htmlswp.html">HTML Structure</a>
+        <a href="htmlpt.html">HTML Page Titles</a>
+        <a href="htmlp.html"> HTML Paragraphs</a>
+        <a href="htmlh.html">HTML Headings</a>
+        <a href="htmluno.html">HTML Unordered Lists</a>
+        <a href="htmlol.html">HTML Ordered Lists</a>
+        <a href="htmlee.html">HTML Emphasis Elements</a>
+        <a href="htmlstrong.html">HTML Strong Elements</a>
+        <a href="htmlsvp.html">HTML Structure Versus Presentation</a>
+        <a href="htmlempty.html">HTML Empty Elements</a>
+        <a href="htmllai.html">HTML Links & Images</a>
+        <a href="htmlsetuplai.html">HTML Setup Links&Images</a>
+        <a href="htmla.html">HTML Anchors Tag</a>
+        <a href="htmllink.html">HTML Link</a>
+        <a href="htmlabs.html">HTML Absolute,Relative and Root-relative links</a>
+        <a href="htmllt.html">HTML Link Targets</a>
+        <a href="htmlnc.html">HTML Naming Conventions</a>
+        <a href="htmlimages.html">HTML Images</a>
+        <a href="htmlif.html">HTML Image Formats</a>
+        <a href="htmlid.html">HTML Image Dimensions</a>
+        <a href="htmlta.html">HTML Text Alternatives</a>
+        <a href="htmlma.html">HTML More Attributes</a>
+        <a href="htmlentity.html">HTML Entities</a>
+
+    </div>
+
+    <div class="content">
+        <h1 style="text-align:center;"> Image Formats</h1>
+        <hr>
+        <p style="font-family:Verdana;">
+            <br>
+            There’s four main image formats in use on the web, and they were all designed to do different things.
+            Understanding their intended purpose goes a long way towards improving the quality of your web pages.
+            <br>
+            <img src="https://www.internetingishard.com/html-and-css/links-and-images/image-formats-62b23d.png"
+                height="300" width="500">
+            <br>
+            The next few sections will walk through ideal use cases for each of these image formats. Make sure you’ve
+            unzipped these mochi images into your links-and-images project before moving on.
+
+
+        <h2><u>JPG Images</u></h2>
+        <br>
+        <br>
+        JPG images are designed for handling large color palettes without exorbitantly increasing file size. This makes
+        them great for photos and images with lots of gradients in them. On the other hand, JPGs don’t allow for
+        transparent pixels, which you can see in the white edges of the image below if you look real close:
+        <br>
+        <img src="https://www.internetingishard.com/html-and-css/links-and-images/mochi-77c69d.jpg" height="200"
+            width="200">
+        <br>
+        Embed this mochi.jpg image in our images.html page with the following snippet (this also includes a bit of
+        navigation to our other pages):
+        <br>
+        <pre>
+(SPACES HAVE BEEN ADDED TO DIFFERENTIATE THE HTML CODING , SO THAT IT WOULD NOT BE EXECUTED)
+
+        < p>This page covers common image formats, but you may also be looking for 
+        < a href='links.html'>links< /a> and 
+        < a href='misc/extras.html'>usefulextras< /a>.< /p>
+        < h2>JPGs< /h2>
+        < p>JPG images are good for photos.< /p>
+        < img src='images/mochi.jpg' />
+</pre>
+        <br>
+
+        <h2><u>PNG Images</u></h2>
+        <br>
+        <br>
+        PNGs are great for anything that’s not a photo or animated. For photos, a PNG file of the same quality (as
+        perceived the human eye) would generally be bigger than an equivalent JPG file. However, they do deal with
+        opacity just fine, and they don’t have color palette limitations. This makes them an excellent fit for icons,
+        technical diagrams, logos, etc.
+        <br>
+        <img src="https://www.internetingishard.com/html-and-css/links-and-images/mochi-f95fdf.png" height="200"
+            width="200">
+        <br>
+
+        Let’s add this PNG image to our example project as well:
+        <br>
+        <pre>
+(SPACES HAVE BEEN ADDED TO DIFFERENTIATE THE HTML CODING , SO THAT IT WOULD NOT BE EXECUTED)
+
+< h2>PNGs</h2>
+ <p>PNGs are good for diagrams and icons.< /p>
+< img src='images/mochi.png'/>
+ </pre>
+        <br>
+
+        <h2><u>SVG Images</u></h2>
+        <br>
+        <br>
+        Unlike the pixel-based image formats above, SVG is a vector-based graphics format, meaning it can scale up or
+        down to any dimension without loss of quality. This property makes SVG images a wonderful tool for responsive
+        design. They’re good for pretty much all the same use cases as PNGs, and you should use them whenever you can.
+        <br>
+        <img src="https://www.internetingishard.com/html-and-css/links-and-images/svg-vs-png-image-3df7fd.png"
+            height="200" width="200">
+        <br>
+        These 300×300 pixel images were originally 100×100 pixels, but scaling them up clearly shows the difference
+        between them. Notice the crisp, clean lines on the left SVG image, while the PNG image on the right is now very
+        pixelated.
+
+        Despite being a vector format, SVGs can be used exactly like their raster counterparts. Go ahead and add the
+        mochi.svg to our images.html page:
+        <br>
+        <pre>
+(SPACES HAVE BEEN ADDED TO DIFFERENTIATE THE HTML CODING , SO THAT IT WOULD NOT BE EXECUTED)
+
+        < h2>SVGs< /h2>
+        < p>SVGs are < em>amazing< /em>. Use them wherever you can.< /p>
+        < img src='images/mochi.svg' />
+        </pre>
+
+
+        There is one potential issue with SVGs: for them to display consistently across browsers, you need to convert
+        any text fields to outlines using your image editor (e.g., Abode Illustrator or Sketch). If your images contain
+        a lot of text (like the fancy screenshots in this tutorial), this can have a big impact on file size. For this
+        reason, InternetingIsHard.com uses PNGs instead of SVGs, even though SVGs are so awesome.
+        <br>
+        <br>
+        </p>
+    </div>
+</body></html>

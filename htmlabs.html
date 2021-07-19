@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a class="active" href="index.html">BACK</a>
+        <a href="htmlbwp.html">HTML BASIC WEB PAGES</a>
+        <a href="htmlsetup.html">HTML Setup</a>
+        <a href="htmlswp.html">HTML Structure</a>
+        <a href="htmlpt.html">HTML Page Titles</a>
+        <a href="htmlp.html"> HTML Paragraphs</a>
+        <a href="htmlh.html">HTML Headings</a>
+        <a href="htmluno.html">HTML Unordered Lists</a>
+        <a href="htmlol.html">HTML Ordered Lists</a>
+        <a href="htmlee.html">HTML Emphasis Elements</a>
+        <a href="htmlstrong.html">HTML Strong Elements</a>
+        <a href="htmlsvp.html">HTML Structure Versus Presentation</a>
+        <a href="htmlempty.html">HTML Empty Elements</a>
+        <a href="htmllai.html">HTML Links & Images</a>
+        <a href="htmlsetuplai.html">HTML Setup Links&Images</a>
+        <a href="htmla.html">HTML Anchors Tag</a>
+        <a href="htmllink.html">HTML Link</a>
+        <a href="htmlabs.html">HTML Absolute,Relative and Root-relative links</a>
+        <a href="htmllt.html">HTML Link Targets</a>
+        <a href="htmlnc.html">HTML Naming Conventions</a>
+        <a href="htmlimages.html">HTML Images</a>
+        <a href="htmlif.html">HTML Image Formats</a>
+        <a href="htmlid.html">HTML Image Dimensions</a>
+        <a href="htmlta.html">HTML Text Alternatives</a>
+        <a href="htmlma.html">HTML More Attributes</a>
+        <a href="htmlentity.html">HTML Entities</a>
+    </div>
+
+    <div class="content">
+        <h1 style="text-align:center;">Absolute,Relative & Root-relative links</h1>
+        <hr>
+        <p style="font-family:Verdana;">
+            Now that we’re working with links, we need to understand how a website is structured. For our purposes, a
+            website is just a collection of HTML files organized into folders. To refer to those files from inside of
+            another file, the Internet uses “uniform resource locators” (URLs). Depending on what you’re referring to,
+            URLs can take different forms. The three types of URLs we’ll be dealing with are highlighted below:
+
+            <br>
+            <img src="https://www.internetingishard.com/html-and-css/links-and-images/absolute-relative-root-relative-links-104560.png"
+                height="300" width="500">
+            <br>
+            Absolute, relative, and root-relative links refer to the value of the href attribute. The next few sections
+            will explain how and when to use each of them. But first, let’s add the following content to our links.html
+            file:
+            <br>
+        <pre>
+            (SPACES HAVE BEEN ADDED TO DIFFERENTIATE THE HTML CODING , SO THAT IT WOULD NOT BE EXECUTED)
+        < p>
+        This particular page is about links! There are three kinds of links:
+        < /p>
+
+        < ul>
+            < !-- Add <li> elements here -->
+        < /ul>
+            </pre>
+        <br>
+
+        <h2><u>Absolute links</u></h2>
+
+        “Absolute” links are the most detailed way you can refer to a web resource. They start with the “scheme”
+        (typically http:// or https://), followed by the domain name of the website, then the path of the target web
+        page.
+        <br>
+        <img src="https://www.internetingishard.com/html-and-css/links-and-images/absolute-link-syntax-64d730.png"
+            height="300" width="500">
+        <br>
+        For example, try creating a link to the Mozilla Developer Network’s HTML element reference:
+        <br>
+        <pre>
+            (SPACES HAVE BEEN ADDED TO DIFFERENTIATE THE HTML CODING , SO THAT IT WOULD NOT BE EXECUTED)
+
+
+< li>Absolute links, like to
+    < a href='https://developer.mozilla.org/en-US/docs/Web/HTML'>Mozilla
+    Developer Network< /a>, which is a very good resource for web
+    developers.< /li>
+        </pre>
+        It’s possible to use absolute links to refer to pages in your own website, but hard-coding your domain name
+        everywhere can make for some tricky situations. It’s usually a better idea to reserve absolute links only for
+        directing users to a different website.
+        <br>
+        <img src="https://www.internetingishard.com/html-and-css/links-and-images/absolute-links-32f469.png"
+            height="300" width="500">
+        <br>
+
+        <h2><u>Relative links</u></h2>
+        <br>
+        “Relative” links point to another file in your website from the vantage point of the file you’re editing. It’s
+        implied that the scheme and domain name are the same as the current page, so the only thing you need to supply
+        is the path.
+        <br>
+        Here’s how we can link to our extras.html file from inside of links.html:
+        <br>
+        <br>
+        <pre>
+            (SPACES HAVE BEEN ADDED TO DIFFERENTIATE THE HTML CODING , SO THAT IT WOULD NOT BE EXECUTED)
+
+        < li>Relative links, like to our < a href='misc/extras.html'>extras
+                page< /a>.< /li></pre>
+        <br>
+        In this case, the href attribute represents the file path to extras.html from the links.html
+        file. Since
+        extras.html isn’t in the same folder as links.html, we need to include the misc folder in the
+        URL.
+        <br>
+        <img src="https://www.internetingishard.com/html-and-css/links-and-images/relative-links-e178d0.png"
+            height="300" width="500">
+        <br>
+        Each folder and file in a path is separated by a forward slash (/). So, if we were trying to get
+        to a file that was two folders deep, we’d need a URL like this:
+        <br>
+        mis c/other-folder/extras.html
+        <br>
+        <br>
+
+        <h2><u>Parent Folders</u></h2>
+        <br>
+
+        That works for referring to files that are in the same folder or a deeper folder. What about
+        linking to pages that are in a directory above the current file? Let’s try creating relative
+        links to links.html and images.html from within our extras.html file. Add this to extras.html:
+
+        <br>
+        <pre>
+            (SPACES HAVE BEEN ADDED TO DIFFERENTIATE THE HTML CODING , SO THAT IT WOULD NOT BE EXECUTED)
+
+                        < p>This page is about miscellaneous HTML things, but you may
+                            also be interested in  < a href='links.html'>links< /a> or
+                             < a href='images.html'>images< /a>.
+                        < /p>
+        </pre>
+        When you click either of those links in a web browser, it will complain that the page doesn’t
+        exist. Examining the address bar, you’ll discover that the browser is trying to load
+        misc/links.html and misc/images.html—it’s looking in the wrong folder! That’s because our links
+        are relative to the location of extras.html, which lives in the misc folder.
+        <br>
+        <img src="https://www.internetingishard.com/html-and-css/links-and-images/relative-link-no-parent-4629d0.png"
+            height="300" width="500">
+        <br>
+
+        To fix this, we need the .. syntax. Two consecutive dots in a file path represent a pointer to the parent
+        directory:
+        <br>
+        <pre>
+            (SPACES HAVE BEEN ADDED TO DIFFERENTIATE THE HTML CODING , SO THAT IT WOULD NOT BE EXECUTED)
+
+        < p>
+        This page is about miscellaneous HTML things, but you may also be
+            interested in < a href='../links.html'>links< /a> or < a href='../images.html'>images< /a>.< /p>
+        </pre>
+
+        This is like saying, “I know extras.html is in the misc folder. Go up a folder and look for links.html and
+        images.html in there.”
+        <br>
+        <img src="https://www.internetingishard.com/html-and-css/links-and-images/relative-link-with-parent-666b79.png"
+            height="300" width="500">
+        <br>
+        To navigate up through multiple directories, use multiple .. references, like so:
+        <br>
+        ../../elsewhere.html
+        <br>
+        Relative links are nice because they let you move around entire folders without having to update all the href’s
+        on your < a> elements, but they can get a little confusing when all your links start with a bunch of dots.
+            They’re best for referring to resources in the same folder or in a standalone section of your website.
+
+            For example, all the images in HTML & CSS Is Hard are loaded with relative URLs (we’ll learn how to do
+            images a moment). This allows us to rename any of our chapter slugs without having to update all our image
+            paths.
+            <br>
+
+            <h2><u>Root-Relative Links</u></h2>
+            <br>
+            “Root-relative” links are similar to the previous section, but instead of being relative to the current
+            page, they’re relative to the “root” of the entire website. For instance, if your website is hosted on
+            our-site.com, all root-relative URLs will be relative to our-site.com.
+            <br>
+            <img src="https://www.internetingishard.com/html-and-css/links-and-images/root-relative-links-368060.png"
+                height="300" width="500">
+            <br>
+            Unfortunately, there is one caveat to our discussion of root-relative links: this entire tutorial uses local
+            HTML files instead of a website hosted on a web server. This means we won’t be able to experiment with
+            root-relative links. But, if we did have a real server, the link to our home page would look like this:
+<br>
+<br>
+            < !-- This won't work for our local HTML files -->
+            < li>Root-relative links, like to the < a href='/'>home page< /a> of our website,
+                but those aren't useful to us right now.< /li>
+                <br>
+                <br>
+            The only difference between a root-relative link and a relative one is that the former starts with a forward
+            slash. That initial forward slash represents the root of your site. You can add more folders and files to
+            the path after that initial slash, just like relative links. The following path will work correctly no
+            matter where the current page is located (even in misc/extras.html):
+            <br>
+
+            /images.html
+            <br>
+            Root-relative links are some of the most useful kinds of links. They’re explicit enough to avoid the
+            potential confusion of relative links, but they’re not overly explicit like absolute links. You’ll see a lot
+            of them throughout your web development career, especially in larger websites where it’s hard to keep track
+            of relative references.
+            <br>
+            <br>
+            <br>
+    </p>
+    </div>
+</body>
+</html>

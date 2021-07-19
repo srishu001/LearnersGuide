@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>cp arr</title>
+</head>
+<body>
+    <div class="sidebar">
+        <a class="active"  href="index.html">BACK</a>
+        <a href="cp intro.html">C Introduction</a>
+        <h3>C Language Fundamental</h3>
+        <a href="cp tok.html">C Token</a>
+        <a href="cp ide.html">C Identifiers</a>
+        <a href="cp key.html">C Keywords</a>
+        <a href="cp con.html"> C Constants</a>
+        <a href="cp opr.html">C Operators</a>
+        <a href="cp dt.html"> C Data Type</a>
+        <a href="cp var.html">C Variables</a>
+        <h3>Decision Making Structures in C</h3>
+        <a href="cp is.html">If Statement</a>
+        <a href="cp ies.html">If-Else Statement</a>
+        <a href="cp nie.html">Nested If-Else</a>
+        <a href="cp eif.html">Else-If Statement</a>
+        <a href="co gs.html">Goto Statement</a>
+        <a href="cp swit.html">Switch Statement</a>
+        <h3>Loop control Structure in C</h3>
+        <a href="cp whi.html">While Loop</a>
+        <a href="cp for.html">For Loop</a>
+        <a href="cp dw.html">Do-While Loop</a>
+        <h3>Array and String in C</h3>
+        <a href="cp arr.html">Array </a>
+        <a href="cp str.html">String</a>
+        <h3>Function in C</h3>
+        <a href="cp fun.html">Functions</a>
+        <a href="cp funde.html">Function Definition</a>
+        <a href="cp fv.html">Function Variables</a>
+        <h3>Pointer in C</h3>
+        <a href="cp poin.html">Pointer</a>
+        <a href="cp pa.html">Pointer and Array</a>
+        <a href="cp pf.html">Pointer and Function</a>
+        <a href="cp mm.html">Memory Management</a>
+        <a href="cp dma.html">Dynamic Memory Allocation</a>
+       
+    </div> 
+    <div class="content">
+        <h1>Array in C </h1>
+       <hr>
+       <p>The array is a data structure in C programming, which can store a fixed-size sequential collection of elements of the same data type.</p>
+       <img src="https://cdn.programiz.com/sites/tutorial2program/files/c-arrays.jpg"width='350' height='200'>
+       <p>For example, if you want to store ten numbers, it is easier to define an array of 10 lengths, instead of defining ten variables.
+
+        In the C programming language, an array can be One-Dimensional, Two-Dimensional, and Multidimensional.</p>
+        <p>An array is a variable that can store multiple values. For example, if you want to store 100 integers, you can create an array for it.</p>
+        <p><b><br>int data[100];</b></p>
+       <h3>Declaration of Array</h3>
+       <p>Here, we declared an array, mark, of floating-point type. And its size is 5. Meaning, it can hold 5 floating-point values.
+
+        It's important to note that the size and type of an array cannot be changed once it is declared.</p>
+        <p><u>Syntex :</u></p>
+       <p><b><br>dataType arrayName[arraySize];</b></p>
+      <p><u>For Example :</u></p>
+      <p><b>float mark[5]</b></p>
+      <h3>Access Array Elements</h3>
+      <p>You can access elements of an array by indices.
+
+        Suppose you declared an array mark as above. The first element is mark[0], the second element is mark[1] and so on.</p>
+        <img src="https://cdn.programiz.com/sites/tutorial2program/files/c-array-declaration.jpg"width='500' height='250'>
+        <p><u>Notes :</u></p>
+        <p>Arrays have 0 as the first index, not 1. In this example, mark[0] is the first element. <br><br>
+            If the size of an array is n, to access the last element, the n-1 index is used. In this example, mark[4] <br><br>
+            Suppose the starting address of mark[0] is 2120d. Then, the address of the mark[1] will be 2124d. Similarly, the address of mark[2] will be 2128d and so on. <br><br>
+            This is because the size of a float is 4 bytes. <br></p>
+            <h3>Array Initialization</h3>
+            <p>It is possible to initialize an array during declaration. For example,</p>
+            <p><b><br>int mark[5] = {19, 10, 8, 17, 9};<br></b></p>
+            <p>You can also initialize an array like this.</p>
+            <p><b>int mark[] = {19, 10, 8, 17, 9};</b></p>
+            <p>Here, we haven't specified the size. However, the compiler knows its size is 5 as we are initializing it with 5 elements.</p>
+            <img src="https://cdn.programiz.com/sites/tutorial2program/files/c-array-initialization.jpg"width='500' height='250'>
+            <p><b>int myArray[5]; <br>
+                int n = 0; <br><br>
+                
+                // Initializing elements of array seperately <br>
+                for(n=0;n< sizeof(myArray)/sizeof(myArray[0]);n++) <br>
+                { <br>
+                  myArray[n] = n; <br> 
+                } <br></b></p>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="sidebar">
+      <a class="active" href="index.html">BACK</a>
+      <a href="htmlbwp.html">HTML BASIC WEB PAGES</a>
+      <a href="htmlsetup.html">HTML Setup</a>
+      <a href="htmlswp.html">HTML Structure</a>
+      <a href="htmlpt.html">HTML Page Titles</a>
+      <a href="htmlp.html"> HTML Paragraphs</a>
+      <a href="htmlh.html">HTML Headings</a>
+      <a href="htmluno.html">HTML Unordered Lists</a>
+      <a href="htmlol.html">HTML Ordered Lists</a>
+      <a href="htmlee.html">HTML Emphasis Elements</a>
+      <a href="htmlstrong.html">HTML Strong Elements</a>
+      <a href="htmlsvp.html">HTML Structure Versus Presentation</a>
+      <a href="htmlempty.html">HTML Empty Elements</a>
+      <a href="htmllai.html">HTML Links & Images</a>
+      <a href="htmlsetuplai.html">HTML Setup Links&Images</a>
+      <a href="htmla.html">HTML Anchors Tag</a>
+      <a href="htmllink.html">HTML Link</a>
+      <a href="htmlabs.html">HTML Absolute,Relative and Root-relative links</a>
+      <a href="htmllt.html">HTML Link Targets</a>
+      <a href="htmlnc.html">HTML Naming Conventions</a>
+      <a href="htmlimages.html">HTML Images</a>
+      <a href="htmlif.html">HTML Image Formats</a>
+      <a href="htmlid.html">HTML Image Dimensions</a>
+      <a href="htmlta.html">HTML Text Alternatives</a>
+      <a href="htmlma.html">HTML More Attributes</a>
+      <a href="htmlentity.html">HTML Entities</a>
+    </div>
+    <div class="content">
+        <h1 style="text-align:center;">Emphasis Elements</h1>
+  <hr>
+
+  <p>
+So far, we’ve only been working with “block-level elements” (also called “flow content”). 
+The other major type of content is “inline elements” or “phrasing content”, which are treated a little bit differently. 
+Block-level elements are always drawn on a new line, while inline elements can affect sections of text anywhere within a line.
+
+<br>
+<img src="https://www.internetingishard.com/html-and-css/basic-web-pages/inline-vs-block-elements-44860e.png" height="300" width="500">
+<br>
+
+For instance, < p> is a block-level element, while < em> is an inline element that affects a span of text inside of a paragraph. 
+It stands for “emphasis”, and it’s typically displayed as italicized text. 
+Try adding a new section demonstrating emphasized text to our example web page:
+<br>
+<pre>
+(SPACES HAVE BEEN ADDED TO DIFFERENTIATE THE HTML CODING , SO THAT IT WOULD NOT BE EXECUTED)
+< h2>Inline Elements< /h2>
+< p>< em>Sometimes< /em>, you need to draw attention to a particular word or
+phrase.< /p>
+</pre>
+The part wrapped in < em> tags should render as italics, as shown below.
+ Notice how only part of a line has been affected, which is characteristic of inline elements. 
+ In the CSS Model Box chapter, we’ll discover how inline and block elements can have a dramatic impact on the layout of a page.
+
+ <br>
+<img src="https://www.internetingishard.com/html-and-css/basic-web-pages/html-emphasis-element-87be03.png" height="300" width="500">
+<br>
+
+Just in case it hasn’t sunk in yet, it’s really important that you properly nest your HTML elements.
+ It’s easier to mess up the order of tags when you’re using multiple inline elements,
+  so make sure to double-check that your markup never looks like this:
+< !-- (Again, don't ever do this) -->
+< p>This is some < em>emphasized text< /p>< /em>
+
+
+
+
+        
+</p>
+    </div>
+        </body>
+</html>
+   

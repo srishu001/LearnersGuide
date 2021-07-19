@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="sidebar">
+  <a class="active" href="index.html">BACK</a>
+  <a href="htmlbwp.html">HTML BASIC WEB PAGES</a>
+  <a href="htmlsetup.html">HTML Setup</a>
+  <a href="htmlswp.html">HTML Structure</a>
+  <a href="htmlpt.html">HTML Page Titles</a>
+  <a href="htmlp.html"> HTML Paragraphs</a>
+  <a href="htmlh.html">HTML Headings</a>
+  <a href="htmluno.html">HTML Unordered Lists</a>
+  <a href="htmlol.html">HTML Ordered Lists</a>
+  <a href="htmlee.html">HTML Emphasis Elements</a>
+  <a href="htmlstrong.html">HTML Strong Elements</a>
+  <a href="htmlsvp.html">HTML Structure Versus Presentation</a>
+  <a href="htmlempty.html">HTML Empty Elements</a>
+  <a href="htmllai.html">HTML Links & Images</a>
+  <a href="htmlsetuplai.html">HTML Setup Links&Images</a>
+  <a href="htmla.html">HTML Anchors Tag</a>
+  <a href="htmllink.html">HTML Link</a>
+  <a href="htmlabs.html">HTML Absolute,Relative and Root-relative links</a>
+  <a href="htmllt.html">HTML Link Targets</a>
+  <a href="htmlnc.html">HTML Naming Conventions</a>
+  <a href="htmlimages.html">HTML Images</a>
+  <a href="htmlif.html">HTML Image Formats</a>
+  <a href="htmlid.html">HTML Image Dimensions</a>
+  <a href="htmlta.html">HTML Text Alternatives</a>
+  <a href="htmlma.html">HTML More Attributes</a>
+  <a href="htmlentity.html">HTML Entities</a>
+
+</div>
+
+<div class="content">
+  <h1 style="text-align:center;">Structure of Web Pages</h1>
+    <hr>
+    <p style="font-family:Verdana;">
+
+        Add the following HTML markup to our basics.html file. This is what you’ll start with for every single web page
+    you’ll ever produce. Typically, you would use a templating engine of some sort to avoid re-typing the redundant
+    parts, but for this tutorial, we’ll be focusing on the raw HTML.
+
+    <br>
+<pre>
+(SPACES HAVE BEEN ADDED TO DIFFERENTIATE THE HTML CODING , SO THAT IT WOULD NOT BE EXECUTED)
+< !DOCTYPE html>
+< html>
+  < head>
+    < !-- Metadata goes here -->
+  < /head>
+  < body>
+    <! -- Content goes here -->
+  < /body>
+< /html>
+</pre>
+
+
+    First, we need to tell browsers that this is an HTML 5 web page with the
+    !DOCTYPE html line. This is just a special string that browsers look for when they try to display our web page,
+    and it always needs to look exactly like it does above.
+    Then, our entire web page needs to be wrapped in html tags. 
+
+    The actual html text is called an “opening tag”,while < /html> is called a “closing tag”. 
+    Everything inside of these tags are considered part of the html “element”,
+    which is this ethereal thing that gets created when a web browser parses your HTML tags.
+
+    <br>
+    <img src="https://www.internetingishard.com/html-and-css/basic-web-pages/html-tags-elements-72813b.png" height="300" width="500">
+    <br>
+
+    Inside of the html element, we have two more elements called head and body. A web page’s head contains all of its
+    metadata,
+    like the page title, any CSS stylesheets, and other things that are required to render the page but you don’t
+    necessarily want the user to see. The bulk of our HTML markup will live in the body element,
+    which represents the visible content of the page. Note that opening up our page in a web browser
+    won’t display anything, since it has an empty body.
+
+    <br>
+    <img src="https://www.internetingishard.com/html-and-css/basic-web-pages/html-head-body-7c2a73.png"  height="300" width="500">
+    <br>
+
+    The purpose of this head body split will become clearer in a few chapters after we start working with CSS.
+    Also notice the HTML comment syntax in the above snippet. Anything that starts with
+    < !-- and ends with -->will be completely ignored by the browser. This is useful for documenting your code and
+        making notes to yourself.
+    </p>
+
+
+        
+   
+    </div>
+        </body>
+</html>
+   

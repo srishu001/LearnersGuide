@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>css ls</title>
+</head>
+<body>
+    <div class="sidebar">
+        <a class="active"  href="index.html">BACK</a>
+        <a href="css web.html">CSS Introduction</a>
+        <a href="css syn.html">CSS Syntex</a>
+        <a href="css col.html">CSS Colors</a>
+        <a href="css com.html">CSS Comment</a>
+        <a href="css smp.html"> Setting Multiple Properties</a>
+        <a href="css sde.html"> Selecting Different Elements</a>
+        <a href="css um.html"> Unit Measurement</a>
+        <a href="css ls.html">List Style</a>
+        <a href="css ss.html">Style Sheet</a>
+        <a href="css mts.html">More Text Style</a>
+        <a href="css pss.html">Page-Specific styles</a>
+        <a href="css is.html">Inline Style</a>
+        <a href="css ms.html">Multiple Style</a>
+        <a href="css cas.html">Cascade</a>
+
+      
+      
+      
+      </div>
+      
+      <div class="content">
+        <h1>List Style</h1>
+        <p>______________________________________________________________________________________________________________________________________________________</p>
+    <p>What if we want to add some styles to all our headings? <br> We don’t want to have redundant rules, since that would eventually become a nightmare to maintain:</p>
+    <p>example:</p>
+    <p><b> h1 {<br>
+        font-family: "Helvetica", "Arial", sans-serif; <br>
+      } <br> <br>
+      
+      h2 {<br>
+        font-family: "Helvetica", "Arial", sans-serif;<br>
+      } <br><br>
+      
+      h3 {<br><br>
+        font-family: "Helvetica", "Arial", sans-serif;<br>
+      } <br></b></p>
+      <p>Instead, we can select multiple HTML elements in the same CSS rule by separating them with commas. Add this to our styles.css file:</p>
+      <p><b><br> h1, h2, h3, h4, h5, h6 { <br><br>
+        font-family: "Helvetica", "Arial", sans-serif; <br><br>
+      } <br><br></b></p>
+
+      <p>The list-style-type property lets you alter the bullet icon used for<b> < li></b> elements. You’ll typically want to define it on the parent < ul> or < ol> element:</p>
+      <p><b>ul { <br>
+        list-style-type: circle;<br>
+      } <br><br>
+      
+      ol { <br><br>
+        list-style-type: lower-roman;<br><br>
+      } <br></b></p>
+      <img src="https://www.internetingishard.com/html-and-css/hello-css/list-items-for-menus-70abb2.png"width='580' height='388'>
+
+</body>
+</html>

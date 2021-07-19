@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a class="active" href="index.html">BACK</a>
+        <a href="htmlbwp.html">HTML BASIC WEB PAGES</a>
+        <a href="htmlsetup.html">HTML Setup</a>
+        <a href="htmlswp.html">HTML Structure</a>
+        <a href="htmlpt.html">HTML Page Titles</a>
+        <a href="htmlp.html"> HTML Paragraphs</a>
+        <a href="htmlh.html">HTML Headings</a>
+        <a href="htmluno.html">HTML Unordered Lists</a>
+        <a href="htmlol.html">HTML Ordered Lists</a>
+        <a href="htmlee.html">HTML Emphasis Elements</a>
+        <a href="htmlstrong.html">HTML Strong Elements</a>
+        <a href="htmlsvp.html">HTML Structure Versus Presentation</a>
+        <a href="htmlempty.html">HTML Empty Elements</a>
+        <a href="htmllai.html">HTML Links & Images</a>
+        <a href="htmlsetuplai.html">HTML Setup Links&Images</a>
+        <a href="htmla.html">HTML Anchors Tag</a>
+        <a href="htmllink.html">HTML Link</a>
+        <a href="htmlabs.html">HTML Absolute,Relative and Root-relative links</a>
+        <a href="htmllt.html">HTML Link Targets</a>
+        <a href="htmlnc.html">HTML Naming Conventions</a>
+        <a href="htmlimages.html">HTML Images</a>
+        <a href="htmlif.html">HTML Image Formats</a>
+        <a href="htmlid.html">HTML Image Dimensions</a>
+        <a href="htmlta.html">HTML Text Alternatives</a>
+        <a href="htmlma.html">HTML More Attributes</a>
+        <a href="htmlentity.html">HTML Entities</a>
+    </div>
+
+    <div class="content">
+        <h1 style="text-align:center;">Image Dimensions</h1>
+        <hr>
+        <p style="font-family:Verdana;">
+
+            By default, the < img /> element uses the inherit dimensions of its image file. Our JPG, GIF, and PNG images
+            are actually 150×150 pixels, while our SVG mochi is only 75×75 pixels.
+            <br>
+            <img src="https://www.internetingishard.com/html-and-css/links-and-images/html-img-formats-3b43c6.png"
+                height="500" width="300">
+            <br>
+
+            As we’ll discuss further in Responsive Images, pixel-based image formats need to be twice as big as you want
+            them to appear on retina displays. To get our pixel-based images down to the intended size (75×75), we can
+            use the < img /> element’s width attribute. In images.html, update all of our pixel-based images to match the
+            following:
+            <br>
+<pre>
+(SPACES HAVE BEEN ADDED TO DIFFERENTIATE THE HTML CODING , SO THAT IT WOULD NOT BE EXECUTED)
+
+            < !-- In JPGs section -->
+            < img src='images/mochi.jpg' width='75' />
+
+            < !-- In GIFs section -->
+            < img src='images/mochi.gif' width='75' />
+
+            < !-- In PNGs section -->
+            < img src='images/mochi.png' width='75' />
+</pre>
+<br>
+            The width attribute sets an explicit dimension for the image. There’s a corresponding height attribute, as
+            well. Setting only one of them will cause the image to scale proportionally, while defining both will
+            stretch the image. Dimension values are specified in pixels, and you should never include a unit (e.g.,
+            width='75px' would be incorrect).
+
+            The width and height attributes can be useful, but it’s usually better to set image dimensions with CSS so
+            you can alter them with media queries. We’ll discuss this in more detail once we get to responsive design.
+            <br>
+            <br>
+            </p>
+    </div>
+</body>
+</html>

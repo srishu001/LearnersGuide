@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>cp pf</title>
+</head>
+<body>
+    <div class="sidebar">
+        <a class="active"  href="index.html">BACK</a>
+        <a href="cp intro.html">C Introduction</a>
+        <h3>C Language Fundamental</h3>
+        <a href="cp tok.html">C Token</a>
+        <a href="cp ide.html">C Identifiers</a>
+        <a href="cp key.html">C Keywords</a>
+        <a href="cp con.html"> C Constants</a>
+        <a href="cp opr.html">C Operators</a>
+        <a href="cp dt.html"> C Data Type</a>
+        <a href="cp var.html">C Variables</a>
+        <h3>Decision Making Structures in C</h3>
+        <a href="cp is.html">If Statement</a>
+        <a href="cp ies.html">If-Else Statement</a>
+        <a href="cp nie.html">Nested If-Else</a>
+        <a href="cp eif.html">Else-If Statement</a>
+        <a href="co gs.html">Goto Statement</a>
+        <a href="cp swit.html">Switch Statement</a>
+        <h3>Loop control Structure in C</h3>
+        <a href="cp whi.html">While Loop</a>
+        <a href="cp for.html">For Loop</a>
+        <a href="cp dw.html">Do-While Loop</a>
+        <h3>Array and String in C</h3>
+        <a href="cp arr.html">Array </a>
+        <a href="cp str.html">String</a>
+        <h3>Function in C</h3>
+        <a href="cp fun.html">Functions</a>
+        <a href="cp funde.html">Function Definition</a>
+        <a href="cp fv.html">Function Variables</a>
+        <h3>Pointer in C</h3>
+        <a href="cp poin.html">Pointer</a>
+        <a href="cp pa.html">Pointer and Array</a>
+        <a href="cp pf.html">Pointer and Function</a>
+        <a href="cp mm.html">Memory Management</a>
+        <a href="cp dma.html">Dynamic Memory Allocation</a>
+       
+    </div> 
+    <div class="content">
+        <h1>Pointer and Function</h1>
+       <hr>
+      <p> In this tutorial, you'll learn to pass addresses and pointers as arguments to functions with the help of examples.
+
+
+In C programming, it is also possible to pass addresses as arguments to functions.</p>>
+
+<p> <b>To accept these addresses in the function definition, we can use pointers. It's because pointers are used to store addresses. Let's take an example: <br><br>
+
+Example: Pass Addresses to Functions <br><br>
+#include < stdio.h> <br>
+void swap(int *n1, int *n2); <br><br>
+
+int main() <br>
+{<br>
+    int num1 = 5, num2 = 10; <br><br>
+
+    // address of num1 and num2 is passed <br>
+    swap( &num1, &num2); <br><br>
+
+    printf("num1 = %d\n", num1); <br>
+    printf("num2 = %d", num2);<br>
+    return 0;<br>
+} <br><br>
+
+void swap(int* n1, int* n2) <br>
+{<br>
+    int temp; <br>
+    temp = *n1;<br>
+    *n1 = *n2;<br>
+    *n2 = temp;<br>
+} <br><br><br>
+When you run the program, the output will be: <br><br>
+
+num1 = 10 <br>
+num2 = 5 <br><br></b></p>
+
+
+<p>The address of num1 and num2 are passed to the swap() function using swap(&num1, &num2);.
+
+Pointers n1 and n2 accept these arguments in the function definition.
+
+void swap(int* n1, int* n2) {
+    ... ..
+}</p>
+
+<p>When *n1 and *n2 are changed inside the swap() function, num1 and num2 inside the main() function are also changed.
+
+Inside the swap() function, *n1 and *n2 swapped. Hence, num1 and num2 are also swapped.
+
+Notice that swap() is not returning anything; its return type is void.</p>
+
+<p><b>Example 2: Passing Pointers to Functions <br><br>
+#include < stdio.h> <br><br>
+
+void addOne(int* ptr) { <br>
+  (*ptr)++; // adding 1 to *ptr <br>
+} <br><br>
+
+int main() <br>
+{<br>
+  int* p, i = 10; <br>
+  p = &i;<br>
+  addOne(p);<br><br>
+
+  printf("%d", *p); // 11 <br>
+  return 0;<br>
+}</b></p>
+
+
+<p><b>Here, the value stored at p, *p, is 10 initially.
+
+We then passed the pointer p to the addOne() function. The ptr pointer gets this address in the addOne() function.
+
+Inside the function, we increased the value stored at ptr by 1 using (*ptr)++;. Since ptr and p pointers both have the same address, *p inside main() is also 11.</b></p>
+       
+
+
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>cp dw</title>
+</head>
+<body>
+    <div class="sidebar">
+        <a class="active"  href="index.html">BACK</a>
+        <a href="cp intro.html">C Introduction</a>
+        <h3>C Language Fundamental</h3>
+        <a href="cp tok.html">C Token</a>
+        <a href="cp ide.html">C Identifiers</a>
+        <a href="cp key.html">C Keywords</a>
+        <a href="cp con.html"> C Constants</a>
+        <a href="cp opr.html">C Operators</a>
+        <a href="cp dt.html"> C Data Type</a>
+        <a href="cp var.html">C Variables</a>
+        <h3>Decision Making Structures in C</h3>
+        <a href="cp is.html">If Statement</a>
+        <a href="cp ies.html">If-Else Statement</a>
+        <a href="cp nie.html">Nested If-Else</a>
+        <a href="cp eif.html">Else-If Statement</a>
+        <a href="co gs.html">Goto Statement</a>
+        <a href="cp swit.html">Switch Statement</a>
+        <h3>Loop control Structure in C</h3>
+        <a href="cp whi.html">While Loop</a>
+        <a href="cp for.html">For Loop</a>
+        <a href="cp dw.html">Do-While Loop</a>
+        <h3>Array and String in C</h3>
+        <a href="cp arr.html">Array </a>
+        <a href="cp str.html">String</a>
+        <h3>Function in C</h3>
+        <a href="cp fun.html">Functions</a>
+        <a href="cp funde.html">Function Definition</a>
+        <a href="cp fv.html">Function Variables</a>
+        <h3>Pointer in C</h3>
+        <a href="cp poin.html">Pointer</a>
+        <a href="cp pa.html">Pointer and Array</a>
+        <a href="cp pf.html">Pointer and Function</a>
+        <a href="cp mm.html">Memory Management</a>
+        <a href="cp dma.html">Dynamic Memory Allocation</a>
+       
+    </div> 
+    <div class="content">
+        <h1>Pointer and Array</h1>
+       <hr>
+       <p>In this tutorial, you'll learn about the relationship between arrays and pointers in C programming. You will also learn to access array elements using pointers. <br><br><br>
+
+
+        Before you learn about the relationship between arrays and pointers, be sure to check these two topics: <br> <br>
+        
+        C Arrays <br>
+        C Pointers <br> <br>
+        Relationship Between Arrays and Pointers <br>
+        An array is a block of sequential data. Let's write a program to print addresses of array elements. <br></p>
+      <p><b><br>#include < stdio.h> <br>
+        int main() { <br>
+           int x[4]; <br>
+           int i; <br> <br>
+        
+           for(i = 0; i < 4; ++i) { <br>
+              printf("&x[%d] = %p\n", i, &x[i]);<br>
+           } <br><br>
+        
+           printf("Address of array x: %p", x); <br><br>
+        
+           return 0; <br>
+        }<br></b></p>
+
+        <p>There is a difference of 4 bytes between two consecutive elements of array x. It is because the size of int is 4 bytes (on our compiler).
+
+            Notice that, the address of &x[0] and x is the same. It's because the variable name x points to the first element of the array.</p>
+
+            <img src="https://cdn.programiz.com/sites/tutorial2program/files/array-pointers.jpg"width='400' height='80'>
+        <p>From the above example, it is clear that &x[0] is equivalent to x. And, x[0] is equivalent to *x. <br><br>
+
+            Similarly, <br><br>
+            
+            &x[1] is equivalent to x+1 and x[1] is equivalent to *(x+1). <br> 
+            &x[2] is equivalent to x+2 and x[2] is equivalent to *(x+2). <br>
+            ... <br>
+            Basically, &x[i] is equivalent to x+i and x[i] is equivalent to *(x+i). <br></p>
+       <p><b><br>#include < stdio.h> <br>
+        int main() { <br>
+          int i, x[6], sum = 0; br 
+          printf("Enter 6 numbers: "); <br>
+          for(i = 0; i < 6; ++i) { <br>
+          // Equivalent to scanf("%d", &x[i]); <br>
+              scanf("%d", x+i); <br><br>
+        
+          // Equivalent to sum += x[i] <br> <br>
+              sum += *(x+i);<br>
+          } <br>
+          printf("Sum = %d", sum); <br>
+          return 0; <br>
+        } <br> <br><br>
+        
+        
+        When you run the program, the output will be: <br><br>
+        
+        Enter 6 numbers:  2 <br>
+         3 <br> 
+         4 <br> 
+         4 <br>
+         12 <br>
+         4 <br>
+        Sum = 29  <br></b></p>
+        <p>Here, we have declared an array x of 6 elements. To access elements of the array, we have used pointers.
+
+            In most contexts, array names decay to pointers. In simple words, array names are converted to pointers. That's the reason why you can use pointers to access elements of arrays. However, you should remember that pointers and arrays are not the same.
+            
+            There are a few cases where array names don't decay to pointers. To learn more, visit: When does array name doesn't decay into a pointer?</p>
+
+           
+
+
+
+</body>
+</html>
